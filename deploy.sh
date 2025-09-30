@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# PRODUCTION
+# Production
 # git reset --hard
 # git checkout master
 # git pull origin master
 
-npm i yarn -g
+npm install yarn -g
 yarn global add serve
-yarn 
+yarn
 yarn run build
-pm2 start "yarn run start:prod" --name=FLOWER-REACT
+pm2 start start.js --name "FLOWER-REACT"
