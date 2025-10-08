@@ -13,6 +13,7 @@ import { retrieveNewDishes } from "./selector";
 import { Product } from "../../../lib/types/product";
 import { serverApi } from "../../../lib/config";
 import { ProductCollection } from "../../../lib/enums/product.enum";
+import { Link } from "react-router-dom";
 
 /** REDUX SLICE & SELECTOR */
 const newDishesRetriever = createSelector(retrieveNewDishes, (newDishes) => ({
@@ -42,7 +43,25 @@ export default function NewDishes() {
                     <Card
                       key={product._id}
                       variant="outlined"
-                      className={"card"}
+                      className="card"
+                      component={Link}
+                      to={`/products/${product._id}`}
+                      sx={{
+                        textDecoration: "none",
+                        cursor: "pointer",
+                        overflow: "hidden",
+                        transition: "transform .25s ease, box-shadow .25s ease",
+                        boxShadow: "md",
+
+                        // faqat karta oynaydi (rasmga o'zgartirish yo'q)
+                        "&:hover": {
+                          transform: "translateY(-6px)",
+                          boxShadow: "lg"
+                        },
+
+                        // ixtiyoriy: bosilganda mayin "press"
+                        "&:active": { transform: "translateY(-2px)" }
+                      }}
                     >
                       <CardOverflow>
                         <div className="product-sale">{sizeVolume}</div>
