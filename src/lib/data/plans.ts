@@ -1,34 +1,34 @@
 export const plans = [
   {
-    title: "Hot Discount Days",
-    desc: "Each Friday we deliver highest discounts",
-    author: "Chef Deming",
-    date: "30 min ago",
-    location: "Turkey, Istambul",
+    title: "Red Rose Bouquets",
+    desc: "Special discounts on roses every Friday!",
+    author: "Flowergul Team",
+    date: "30 minutes ago",
+    location: "Tashkent, Uzbekistan",
     img: "/img/orhideya.jpg"
   },
   {
-    title: "Coming Soon",
-    desc: "Be ready for fresh Arrivals from Monday!",
-    author: "Belissimo Arthur",
+    title: "Tulip Collection",
+    desc: "New tulip varieties arriving from Monday.",
+    author: "Flower Studio",
     date: "2 days ago",
-    location: "Turkey, Istambul",
-    img: "/img/fresh.webp"
+    location: "Amsterdam, Netherlands",
+    img: "/img/gurme.jpg"
   },
   {
-    title: "New Project Lunch",
-    desc: "New Restaurant is opening in Florida",
-    author: "Morgan News",
+    title: "New Orchids",
+    desc: "Rare Phalaenopsis orchids now in stock.",
+    author: "Orchid Club",
     date: "5 days ago",
-    location: "USA, Florida",
-    img: "/img/coming.webp"
+    location: "Bangkok, Thailand",
+    img: "/img/gul5.jpg"
   },
   {
-    title: "Join us on sns",
-    desc: "🥬 We are offering healthy food reciepies on sns",
-    author: "Belissimo Agent",
+    title: "Peony & Hydrangea Mix",
+    desc: "Vibrant bouquets for summer celebrations.",
+    author: "Garden Team",
     date: "A week ago",
-    location: "Europe, France",
-    img: "/img/food-city.webp"
+    location: "Provence, France",
+    img: "/img/gul6.jpg"
   }
 ];

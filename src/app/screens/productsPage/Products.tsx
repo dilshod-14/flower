@@ -40,7 +40,7 @@ export default function Products(props: ProductsProps) {
     page: 1,
     limit: 8,
     order: "createdAt",
-    productCollection: ProductCollection.LOTUS,
+    productCollection: ProductCollection.OTHER,
     search: ""
   });
   const [searchText, setSearchText] = useState<string>("");
